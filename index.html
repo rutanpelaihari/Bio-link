@@ -147,6 +147,15 @@
     feather.replace();
   </script>
 
+  <!-- Redirect Setelah Pengiriman -->
+  <script>
+    document.getElementById('complaintForm').addEventListener('submit', function () {
+      setTimeout(function () {
+        window.location.href = 'index.html'; // Ganti dengan URL halaman utama Anda
+      }, 1000); // Redirect setelah 1 detik
+    });
+  </script>
+
   <!-- Embed Floating Button -->
   <script defer>
     document.body.appendChild(document.createElement('div')).setAttribute('id', 'chatBubbleRoot');
