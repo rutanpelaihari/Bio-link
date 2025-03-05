@@ -1,118 +1,91 @@
-/* Animasi Hover untuk Tombol */
-.submit-button {
-  display: inline-flex;
-  align-items: center;
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menggunakan font Poppins */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: #fff; /* Warna teks putih */
-  background-color: #07213d; /* Warna tombol utama */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease; /* Efek transisi */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.submit-button:hover {
-  background-color: #051b30; /* Warna lebih gelap saat hover */
-  transform: translateY(-2px); /* Efek melayang ke atas */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+.container {
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
 }
 
-/* Animasi Hover untuk Kartu */
 .card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
-  text-align: center;
-  transition: all 0.3s ease; /* Efek transisi */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Efek melayang ke atas */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Animasi Hover untuk Ikon Media Sosial */
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease; /* Efek transisi */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
-}
-
-.social-icon:hover {
-  transform: scale(1.1); /* Efek membesar */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
-}
-
-.social-icon.whatsapp:hover {
-  background-color: #25D366;
-}
-
-.social-icon.instagram:hover {
-  background-color: #E1306C;
-}
-
-.social-icon.facebook:hover {
-  background-color: #1877F2;
-}
-
-.social-icon.twitter:hover {
-  background-color: #1DA1F2;
-}
-
-.social-icon.tiktok:hover {
-  background-color: #000;
-}
-
-.social-icon.youtube:hover {
-  background-color: #FF0000;
-}
-
-/* Animasi Hover untuk Foto Profil */
 .profile-picture-container {
-  margin: 0 auto; /* Menempatkan foto profil di tengah */
-  width: 150px;
-  height: 150px;
-  border: 5px solid #fff; /* Border putih untuk efek kontras */
-  border-radius: 50%; /* Bentuk bulat */
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #fff;
+  border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
-  transition: all 0.3s ease; /* Efek transisi */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.profile-picture-container:hover {
-  transform: scale(1.1); /* Efek zoom in */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Animasi Hover untuk Website Button */
+.profile-info h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.profile-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
 .website-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #fff; /* Warna teks putih */
-  background-color: #07213d; /* Warna tombol baru */
+  color: #fff;
+  background-color: #007aff;
   padding: 10px 20px;
-  border-radius: 5px;
-  transition: all 0.3s ease; /* Efek transisi */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
 .website-button:hover {
-  background-color: #051b30; /* Warna lebih gelap saat hover */
-  transform: translateY(-2px); /* Efek melayang ke atas */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+  background-color: #005bb5;
 }
+
+.website-button i {
+  margin-right: 8px;
+  width: 16px;
+  height: 16
