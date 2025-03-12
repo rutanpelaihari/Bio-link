@@ -243,6 +243,32 @@
       </div>
     </div>
 
+    <!-- Kalkulator Expirasi -->
+    <div class="card mt-4">
+      <div class="card-body">
+        <h2 class="card-title text-center">Kalkulator Expirasi</h2>
+        <form id="expirasiForm" class="text-center">
+          <div class="mb-3">
+            <label for="tanggalAwal" class="form-label">Tanggal Awal Penahanan</label>
+            <input type="date" id="tanggalAwal" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="durasiHukuman" class="form-label">Durasi Hukuman (bulan)</label>
+            <input type="number" id="durasiHukuman" class="form-control" placeholder="Contoh: 60" required>
+          </div>
+          <div class="mb-3">
+            <label for="remisi" class="form-label">Remisi (bulan)</label>
+            <input type="number" id="remisi" class="form-control" placeholder="Contoh: 12" required>
+          </div>
+          <button type="button" onclick="hitungExpirasi()" class="submit-button w-100">
+            <i data-feather="calculator"></i>
+            <span>Hitung</span>
+          </button>
+        </form>
+        <p id="hasilExpirasi" class="mt-3 text-center fw-bold"></p>
+      </div>
+    </div>
+
     <!-- Surat Jaminan -->
     <div class="card mt-4">
       <div class="card-body text-center">
