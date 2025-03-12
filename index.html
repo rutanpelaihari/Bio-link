@@ -304,10 +304,46 @@
       <p>&copy; 2025 Rutan Pelaihari. All rights reserved.</p>
     </footer>
   </div>
+
   <!-- Inisialisasi Feather Icons -->
   <script>
     feather.replace();
   </script>
+
+  <!-- Script untuk Kalkulator Expirasi -->
+  <script>
+    function hitungExpirasi() {
+      // Ambil nilai dari input form
+      const tanggalAwal = new Date(document.getElementById('tanggalAwal').value);
+      const durasiHukumanBulan = parseInt(document.getElementById('durasiHukuman').value);
+      const remisiBulan = parseInt(document.getElementById('remisi').value);
+
+      // Validasi input
+      if (isNaN(tanggalAwal) || isNaN(durasiHukumanBulan) || isNaN(remisiBulan)) {
+        document.getElementById('hasilExpirasi').textContent = 'Silakan isi semua field dengan benar!';
+        return;
+      }
+
+      // Hitung tanggal ekspirasi
+      const totalBulan = durasiHukumanBulan - remisiBulan;
+      if (totalBulan <= 0) {
+        document.getElementById('hasilExpirasi').textContent = 'Masa tahanan telah selesai.';
+        return;
+      }
+
+      // Tambahkan durasi hukuman ke tanggal awal
+      const tanggalEkspirasi = new Date(tanggalAwal);
+      tanggalEkspirasi.setMonth(tanggalEkspirasi.getMonth() + totalBulan);
+
+      // Format hasil tanggal ekspirasi
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const hasilFormatted = tanggalEkspirasi.toLocaleDateString('id-ID', options);
+
+      // Tampilkan hasil
+      document.getElementById('hasilExpirasi').textContent = `Tanggal Ekspirasi: ${hasilFormatted}`;
+    }
+  </script>
+
   <!-- Bootstrap JS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
