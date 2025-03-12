@@ -292,9 +292,10 @@
           </button>
         </form>
         <div id="hasilExpirasi" class="mt-3 text-start fw-bold">
-          <p><strong>2/3 Vonis:</strong> <span id="duaPerTigaVonis"></span></p>
-          <p><strong>Tanggal Expirasi Murni:</strong> <span id="tanggalExpirasiMurni"></span></p>
-          <p><strong>Tanggal 2/3 Masa Pidana:</strong> <span id="tanggalDuaPerTigaPidana"></span></p>
+          <p><strong>Hasil :</strong></p>
+          <p>- 2/3 Vonis : <span id="duaPerTigaVonis"></span></p>
+          <p>- Tanggal Expirasi Murni : <span id="tanggalExpirasiMurni"></span></p>
+          <p>- Tanggal 2/3 Masa Pidana : <span id="tanggalDuaPerTigaPidana"></span></p>
         </div>
       </div>
     </div>
@@ -374,50 +375,56 @@
 
   <!-- Script untuk Kalkulator Expirasi -->
   <script>
-    function hitungExpirasi() {
-      // Ambil nilai dari input form
-      const tanggalPenahanan = new Date(document.getElementById('tanggalPenahanan').value);
-      const vonisTahun = parseInt(document.getElementById('vonisTahun').value) || 0;
-      const vonisBulan = parseInt(document.getElementById('vonisBulan').value) || 0;
-      const vonisHari = parseInt(document.getElementById('vonisHari').value) || 0;
-      const remisiBulan = parseInt(document.getElementById('remisiBulan').value) || 0;
-      const remisiHari = parseInt(document.getElementById('remisiHari').value) || 0;
-      const potonganBulan = parseInt(document.getElementById('potonganBulan').value) || 0;
-      const potonganHari = parseInt(document.getElementById('potonganHari').value) || 0;
+  function hitungExpirasi() {
+    // Ambil nilai dari input form
+    const tanggalPenahanan = new Date(document.getElementById('tanggalPenahanan').value);
+    const vonisTahun = parseInt(document.getElementById('vonisTahun').value) || 0;
+    const vonisBulan = parseInt(document.getElementById('vonisBulan').value) || 0;
+    const vonisHari = parseInt(document.getElementById('vonisHari').value) || 0;
+    const remisiBulan = parseInt(document.getElementById('remisiBulan').value) || 0;
+    const remisiHari = parseInt(document.getElementById('remisiHari').value) || 0;
+    const potonganBulan = parseInt(document.getElementById('potonganBulan').value) || 0;
+    const potonganHari = parseInt(document.getElementById('potonganHari').value) || 0;
 
-      // Hitung total vonis dalam hari
-      const totalVonisHari = (vonisTahun * 365) + (vonisBulan * 30) + vonisHari;
+    // Hitung total vonis dalam hari
+    const totalVonisHari = (vonisTahun * 365) + (vonisBulan * 30) + vonisHari;
 
-      // Hitung total remisi dalam hari
-      const totalRemisiHari = (remisiBulan * 30) + remisiHari;
+    // Hitung total remisi dalam hari
+    const totalRemisiHari = (remisiBulan * 30) + remisiHari;
 
-      // Hitung total potongan tahanan dalam hari
-      const totalPotonganHari = (potonganBulan * 30) + potonganHari;
+    // Hitung total potongan tahanan dalam hari
+    const totalPotonganHari = (potonganBulan * 30) + potonganHari;
 
-      // Hitung sisa vonis setelah remisi dan potongan
-      const sisaVonisHari = totalVonisHari - totalRemisiHari - totalPotonganHari;
+    // Hitung sisa vonis setelah remisi dan potongan
+    const sisaVonisHari = totalVonisHari - totalRemisiHari - totalPotonganHari;
 
-      // Hitung 2/3 vonis
-      const duaPerTigaVonisHari = Math.floor(totalVonisHari * (2 / 3));
+    // Hitung 2/3 vonis
+    const duaPerTigaVonisHari = Math.floor(totalVonisHari * (2 / 3));
 
-      // Hitung tanggal expirasi murni
-      const tanggalExpirasiMurni = new Date(tanggalPenahanan);
-      tanggalExpirasiMurni.setDate(tanggalExpirasiMurni.getDate() + sisaVonisHari);
+    // Hitung tanggal expirasi murni
+    const tanggalExpirasiMurni = new Date(tanggalPenahanan);
+    tanggalExpirasiMurni.setDate(tanggalExpirasiMurni.getDate() + sisaVonisHari);
 
-      // Hitung tanggal 2/3 masa pidana
-      const tanggalDuaPerTigaPidana = new Date(tanggalPenahanan);
-      tanggalDuaPerTigaPidana.setDate(tanggalDuaPerTigaPidana.getDate() + duaPerTigaVonisHari);
+    // Hitung tanggal 2/3 masa pidana
+    const tanggalDuaPerTigaPidana = new Date(tanggalPenahanan);
+    tanggalDuaPerTigaPidana.setDate(tanggalDuaPerTigaPidana.getDate() + duaPerTigaVonisHari);
 
-      // Format hasil tanggal
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      const hasilFormattedExpirasiMurni = tanggalExpirasiMurni.toLocaleDateString('id-ID', options);
-      const hasilFormattedDuaPerTigaPidana = tanggalDuaPerTigaPidana.toLocaleDateString('id-ID', options);
+    // Format hasil tanggal
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const hasilFormattedExpirasiMurni = tanggalExpirasiMurni.toLocaleDateString('id-ID', options);
+    const hasilFormattedDuaPerTigaPidana = tanggalDuaPerTigaPidana.toLocaleDateString('id-ID', options);
 
-      // Tampilkan hasil
-      document.getElementById('duaPerTigaVonis').textContent = `${Math.floor(duaPerTigaVonisHari / 30)} Bulan, ${duaPerTigaVonisHari % 30} Hari`;
-      document.getElementById('tanggalExpirasiMurni').textContent = hasilFormattedExpirasiMurni;
-      document.getElementById('tanggalDuaPerTigaPidana').textContent = hasilFormattedDuaPerTigaPidana;
-    }
+    // Konversi 2/3 vonis ke tahun dan bulan
+    const duaPerTigaVonisTahun = Math.floor(duaPerTigaVonisHari / 365);
+    const duaPerTigaVonisSisaHari = duaPerTigaVonisHari % 365;
+    const duaPerTigaVonisBulan = Math.floor(duaPerTigaVonisSisaHari / 30);
+
+    // Tampilkan hasil
+    document.getElementById('duaPerTigaVonis').textContent = `${duaPerTigaVonisTahun} Tahun, ${duaPerTigaVonisBulan} Bulan`;
+    document.getElementById('tanggalExpirasiMurni').textContent = hasilFormattedExpirasiMurni;
+    document.getElementById('tanggalDuaPerTigaPidana').textContent = hasilFormattedDuaPerTigaPidana;
+  }
+
 
     function hitungPotonganTahanan() {
       // Ambil nilai dari input form
