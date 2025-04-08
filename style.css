@@ -417,3 +417,60 @@ a:hover {
 
 .footer-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .visit-schedule {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .profile-picture-container {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
