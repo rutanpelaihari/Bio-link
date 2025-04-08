@@ -5,400 +5,333 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="EW1Y3cf7Pi5mgSbZc4zGRHx6A1_1kmJRKQvwn8Ms68o" />
   <title>Rumah Tahanan Negara Kelas IIB Pelaihari</title>
+  
   <!-- Bootstrap CSS via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Feather Icons via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <!-- Google Fonts: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <!-- Custom CSS -->
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .card {
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .profile-picture-container {
-      width: 120px;
-      height: 120px;
-      border: 4px solid #fff;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .profile-picture {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .website-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: #fff;
-      background-color: #007aff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 14px;
-      transition: background-color 0.3s ease;
-    }
-    .website-button:hover {
-      background-color: #005bb5;
-    }
-    .social-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #007aff;
-      color: #fff;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .social-icon:hover {
-      background-color: #005bb5;
-    }
-    .social-icon.whatsapp {
-      background-color: #25D366;
-    }
-    .social-icon.instagram {
-      background-color: #E1306C;
-    }
-    .social-icon.facebook {
-      background-color: #1877F2;
-    }
-    .social-icon.twitter {
-      background-color: #1DA1F2;
-    }
-    .social-icon.tiktok {
-      background-color: #000;
-    }
-    .social-icon.youtube {
-      background-color: #FF0000;
-    }
-    .submit-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: #fff;
-      background-color: #007aff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s ease;
-    }
-    .submit-button:hover {
-      background-color: #005bb5;
-    }
-    /* Styling untuk Banner Pengaduan */
-    .complaint-banner {
-      display: block;
-      width: 100%;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .complaint-banner:hover {
-      transform: scale(1.02); /* Efek zoom in saat hover */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
-    }
-    /* Styling untuk Surat Jaminan */
-    .surat-jaminan img {
-      width: 100%;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .surat-jaminan img:hover {
-      transform: scale(1.02); /* Efek zoom in saat hover */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container py-5">
-    <!-- Header dengan Foto Profil -->
-    <div class="card profile-card">
-      <div class="card-body text-center">
-        <!-- Foto Profil -->
-        <div class="profile-picture-container">
-          <img src="https://rutanpelaihari.kemenkumham.go.id/images/2024/08/23/foto-bangunan-rutan.jpg" alt="Foto Profil" class="profile-picture">
-        </div>
-        <!-- Informasi Profil -->
-        <h1 class="card-title">Rumah Tahanan Negara Kelas IIB Pelaihari</h1>
-        <p class="card-text">Informasi dan layanan terkait Rutan Pelaihari</p>
-        <a href="https://rutanpelaihari.kemenkumham.go.id/" class="website-button" target="_blank">
-          <i data-feather="globe"></i>
-          <span>Kunjungi Website</span>
-        </a>
-      </div>
-    </div>
-    <!-- Media Sosial -->
-    <div class="card mt-4">
-      <div class="card-body text-center">
-        <h2 class="card-title">Media Sosial</h2>
-        <div class="d-flex justify-content-center gap-3 mt-3">
-          <a href="https://wa.me/+6281387111197" class="social-icon whatsapp" target="_blank">
-            <i data-feather="message-circle"></i>
-          </a>
-          <a href="https://www.instagram.com/rutan_pelaihari_official?igsh=MTc3cWVyOG5lMHNibw==" class="social-icon instagram" target="_blank">
-            <i data-feather="instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/share/12FC7aACc8s/" class="social-icon facebook" target="_blank">
-            <i data-feather="facebook"></i>
-          </a>
-          <a href="https://x.com/RutanPelaihari3?t=2bUUbEm5s5GEUicGGUAsJQ&s=09" class="social-icon twitter" target="_blank">
-            <i data-feather="twitter"></i>
-          </a>
-          <a href="https://www.tiktok.com/@rutanpelaihari?_t=ZS-8uDQfTV3rRn&_r=1" class="social-icon tiktok" target="_blank">
-            <i data-feather="music"></i>
-          </a>
-          <a href="https://youtube.com/@rutanpelaihari?si=lUKc8sN2wtWbmVM3" class="social-icon youtube" target="_blank">
-            <i data-feather="youtube"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Jadwal Layanan -->
-    <div class="card mt-4">
-      <div class="card-body">
-        <h2 class="card-title text-center">Jadwal Layanan</h2>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Senin
-            <span class="badge bg-primary rounded-pill">08.00 - 15.00 WITA</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Selasa
-            <span class="badge bg-primary rounded-pill">08.00 - 15.00 WITA</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Rabu
-            <span class="badge bg-primary rounded-pill">08.00 - 15.00 WITA</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Kamis
-            <span class="badge bg-primary rounded-pill">08.00 - 15.00 WITA</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Jum'at
-            <span class="badge bg-primary rounded-pill">08.00 - 12.00 WITA</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Sabtu
-            <span class="badge bg-primary rounded-pill">08.00 - 12.00 WITA</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Jadwal Kunjungan/Besuk -->
-    <div class="card mt-4">
-      <div class="card-body">
-        <h2 class="card-title text-center">Jadwal Kunjungan/Besuk</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h5 class="text-center">Tahanan</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Senin & Rabu
-                <span class="badge bg-success rounded-pill">Sesi I: 09.00 - 11.30</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                -
-                <span class="badge bg-success rounded-pill">Sesi II: 13.30 - 14.30</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h5 class="text-center">Narapidana</h5>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Selasa & Kamis
-                <span class="badge bg-success rounded-pill">Sesi I: 09.00 - 11.30</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                -
-                <span class="badge bg-success rounded-pill">Sesi II: 13.30 - 14.30</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Sabtu
-                <span class="badge bg-success rounded-pill">Sesi I: 09.00 - 11.30</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p class="mt-3 text-danger text-center">🛑 Hari Minggu dan Tanggal Merah LIBUR</p>
-      </div>
-    </div>
-
-    <!-- Kalkulator Expirasi -->
-    <div class="card mt-4">
-      <div class="card-body">
-        <h2 class="card-title text-center">Kalkulator Expirasi</h2>
-        <form id="expirasiForm" class="text-center">
-          <div class="mb-3">
-            <label for="tanggalPenahanan" class="form-label">Tanggal Penahanan</label>
-            <input type="date" id="tanggalPenahanan" class="form-control" required>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <label for="vonisTahun" class="form-label">Vonis (Tahun)</label>
-              <input type="number" id="vonisTahun" class="form-control" placeholder="Tahun" required>
+  <header class="hero-section">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-card" data-aos="fade-down">
+            <!-- Logo Kemenkumham -->
+            <div class="logo-container">
+              <img src="https://kemenkumham.go.id/images/jux_portfolio_pro/logo-kemenkumham.png" alt="Logo Kemenkumham" class="logo-img">
             </div>
-            <div class="col">
-              <label for="vonisBulan" class="form-label">Vonis (Bulan)</label>
-              <input type="number" id="vonisBulan" class="form-control" placeholder="Bulan" required>
+            
+            <!-- Foto Profil -->
+            <div class="profile-picture-container">
+              <img src="https://rutanpelaihari.kemenkumham.go.id/images/2024/08/23/foto-bangunan-rutan.jpg" alt="Foto Profil" class="profile-picture">
             </div>
-            <div class="col">
-              <label for="vonisHari" class="form-label">Vonis (Hari)</label>
-              <input type="number" id="vonisHari" class="form-control" placeholder="Hari" required>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <label for="remisiBulan" class="form-label">Jumlah Remisi (Bulan)</label>
-              <input type="number" id="remisiBulan" class="form-control" placeholder="Bulan" required>
-            </div>
-            <div class="col">
-              <label for="remisiHari" class="form-label">Jumlah Remisi (Hari)</label>
-              <input type="number" id="remisiHari" class="form-control" placeholder="Hari" required>
-            </div>
-          </div>
-          <button type="button" onclick="hitungExpirasi()" class="submit-button w-100">
-            <i data-feather="calculator"></i>
-            <span>Hitung</span>
-          </button>
-        </form>
-        <!-- Hasil Perhitungan (Awalnya Tersembunyi) -->
-        <div id="hasilExpirasi" class="mt-3 text-start fw-bold" style="display: none;">
-          <p><strong>Hasil :</strong></p>
-          <p>- Tanggal 1/3 : <span id="tanggalSatuPerTiga"></span></p>
-          <p>- Tanggal 1/2 : <span id="tanggalSatuPerDua"></span></p>
-          <p>- 2/3 Vonis : <span id="duaPerTigaVonis"></span></p>
-          <p>- Tanggal 2/3 Masa Pidana : <span id="tanggalDuaPerTigaPidana"></span></p>
-          <p>- Tanggal Expirasi Murni : <span id="tanggalExpirasiMurni"></span></p>
-        </div>
-      </div>
-    </div>
-    
-        <!-- Surat Jaminan -->
-        <div class="card mt-4">
-          <div class="card-body text-center">
-            <h2 class="card-title">Surat Jaminan</h2>
-            <a href="https://docs.google.com/document/d/1F6NhFipJXVDceTWEVisXwgAeeUDG_LL1/edit" target="_blank">
-              <img src="unduhsuratjaminan.jpg" alt="Unduh Surat Jaminan" class="complaint-banner">
+            
+            <!-- Informasi Profil -->
+            <h1 class="card-title">Rumah Tahanan Negara Kelas IIB Pelaihari</h1>
+            <p class="card-text">Informasi dan layanan terkait Rutan Pelaihari</p>
+            <a href="https://rutanpelaihari.kemenkumham.go.id/" class="primary-button" target="_blank">
+              <i data-feather="globe"></i>
+              <span>Kunjungi Website</span>
             </a>
           </div>
         </div>
-
-    <!-- Banner Pengaduan -->
-    <div class="card mt-4">
-      <div class="card-body text-center">
-        <h2 class="card-title">Pengaduan</h2>
-        <a href="https://pojokpengaduanrutanpelaihari.rf.gd/" target="_blank">
-          <img src="banner.jpg" alt="Banner Pengaduan" class="complaint-banner">
-        </a>
       </div>
     </div>
-
-    <!-- Map -->
-    <div class="card mt-4">
-      <div class="card-body">
-        <h2 class="card-title text-center">Lokasi Kami</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.000344608094!2d114.78347067399523!3d-3.810004943590661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6f0de28e23a5f%3A0x7b7198b365e60cb3!2sRumah%20Tahanan%20Negara%20Klas%20IIB%20Pelaihari!5e0!3m2!1sid!2sid!4v1740527739005!5m2!1sid!2sid"
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </header>
+  
+  <main>
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          
+          <!-- Media Sosial -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body text-center">
+              <h2 class="section-title">
+                <i data-feather="share-2" class="section-icon"></i>
+                Media Sosial
+              </h2>
+              <div class="social-icons-container">
+                <a href="https://wa.me/+6281387111197" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                  <i data-feather="message-circle"></i>
+                </a>
+                <a href="https://www.instagram.com/rutan_pelaihari_official?igsh=MTc3cWVyOG5lMHNibw==" class="social-icon instagram" target="_blank" title="Instagram">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/12FC7aACc8s/" class="social-icon facebook" target="_blank" title="Facebook">
+                  <i data-feather="facebook"></i>
+                </a>
+                <a href="https://x.com/RutanPelaihari3?t=2bUUbEm5s5GEUicGGUAsJQ&s=09" class="social-icon twitter" target="_blank" title="Twitter">
+                  <i data-feather="twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rutanpelaihari?_t=ZS-8uDQfTV3rRn&_r=1" class="social-icon tiktok" target="_blank" title="TikTok">
+                  <i data-feather="music"></i>
+                </a>
+                <a href="https://youtube.com/@rutanpelaihari?si=lUKc8sN2wtWbmVM3" class="social-icon youtube" target="_blank" title="YouTube">
+                  <i data-feather="youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Jadwal Layanan -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body">
+              <h2 class="section-title">
+                <i data-feather="clock" class="section-icon"></i>
+                Jadwal Layanan
+              </h2>
+              <div class="schedule-container">
+                <div class="schedule-item">
+                  <span class="day">Senin</span>
+                  <span class="time">08.00 - 15.00 WITA</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Selasa</span>
+                  <span class="time">08.00 - 15.00 WITA</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Rabu</span>
+                  <span class="time">08.00 - 15.00 WITA</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Kamis</span>
+                  <span class="time">08.00 - 15.00 WITA</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Jum'at</span>
+                  <span class="time">08.00 - 12.00 WITA</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Sabtu</span>
+                  <span class="time">08.00 - 12.00 WITA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Jadwal Kunjungan/Besuk -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body">
+              <h2 class="section-title">
+                <i data-feather="users" class="section-icon"></i>
+                Jadwal Kunjungan/Besuk
+              </h2>
+              <div class="visit-schedule">
+                <div class="visit-type">
+                  <h3>Tahanan</h3>
+                  <div class="schedule-container">
+                    <div class="schedule-item visit">
+                      <span class="day">Senin & Rabu</span>
+                      <div class="time-sessions">
+                        <span class="time">Sesi I: 09.00 - 11.30</span>
+                        <span class="time">Sesi II: 13.30 - 14.30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="visit-type">
+                  <h3>Narapidana</h3>
+                  <div class="schedule-container">
+                    <div class="schedule-item visit">
+                      <span class="day">Selasa & Kamis</span>
+                      <div class="time-sessions">
+                        <span class="time">Sesi I: 09.00 - 11.30</span>
+                        <span class="time">Sesi II: 13.30 - 14.30</span>
+                      </div>
+                    </div>
+                    <div class="schedule-item visit">
+                      <span class="day">Sabtu</span>
+                      <div class="time-sessions">
+                        <span class="time">Sesi I: 09.00 - 11.30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="holiday-notice">
+                <i data-feather="alert-triangle"></i>
+                <span>Hari Minggu dan Tanggal Merah LIBUR</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Kalkulator Expirasi -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body">
+              <h2 class="section-title">
+                <i data-feather="calendar" class="section-icon"></i>
+                Kalkulator Expirasi
+              </h2>
+              <form id="expirasiForm" class="expirasi-form">
+                <div class="mb-3">
+                  <label for="tanggalPenahanan" class="form-label">Tanggal Penahanan</label>
+                  <input type="date" id="tanggalPenahanan" class="form-control" required>
+                </div>
+                
+                <div class="vonis-container mb-3">
+                  <label class="form-label">Vonis</label>
+                  <div class="row">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="number" id="vonisTahun" class="form-control" placeholder="0" required min="0">
+                        <span class="input-group-text">Tahun</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="number" id="vonisBulan" class="form-control" placeholder="0" required min="0" max="11">
+                        <span class="input-group-text">Bulan</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="number" id="vonisHari" class="form-control" placeholder="0" required min="0" max="30">
+                        <span class="input-group-text">Hari</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="remisi-container mb-3">
+                  <label class="form-label">Jumlah Remisi</label>
+                  <div class="row">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="number" id="remisiBulan" class="form-control" placeholder="0" required min="0">
+                        <span class="input-group-text">Bulan</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="number" id="remisiHari" class="form-control" placeholder="0" required min="0" max="30">
+                        <span class="input-group-text">Hari</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <button type="button" id="hitungButton" class="primary-button w-100">
+                  <i data-feather="calculator"></i>
+                  <span>Hitung Expirasi</span>
+                </button>
+              </form>
+              
+              <!-- Hasil Perhitungan (Awalnya Tersembunyi) -->
+              <div id="hasilExpirasi" class="hasil-expirasi">
+                <h3 class="result-title">Hasil Perhitungan</h3>
+                <div class="result-item">
+                  <span class="result-label">Tanggal 1/3</span>
+                  <span class="result-value" id="tanggalSatuPerTiga">-</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Tanggal 1/2</span>
+                  <span class="result-value" id="tanggalSatuPerDua">-</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">2/3 Vonis</span>
+                  <span class="result-value" id="duaPerTigaVonis">-</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Tanggal 2/3 Masa Pidana</span>
+                  <span class="result-value" id="tanggalDuaPerTigaPidana">-</span>
+                </div>
+                <div class="result-item highlight">
+                  <span class="result-label">Tanggal Expirasi Murni</span>
+                  <span class="result-value" id="tanggalExpirasiMurni">-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Surat Jaminan -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body text-center">
+              <h2 class="section-title">
+                <i data-feather="file-text" class="section-icon"></i>
+                Surat Jaminan
+              </h2>
+              <a href="https://docs.google.com/document/d/1F6NhFipJXVDceTWEVisXwgAeeUDG_LL1/edit" class="document-link" target="_blank">
+                <div class="document-card">
+                  <i data-feather="download" class="document-icon"></i>
+                  <h3>Unduh Format Surat Jaminan</h3>
+                  <p>Klik untuk mengunduh template dokumen</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Banner Pengaduan -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body text-center">
+              <h2 class="section-title">
+                <i data-feather="alert-circle" class="section-icon"></i>
+                Layanan Pengaduan
+              </h2>
+              <a href="https://pojokpengaduanrutanpelaihari.rf.gd/" class="document-link" target="_blank">
+                <div class="complaint-banner">
+                  <i data-feather="message-square" class="complaint-icon"></i>
+                  <h3>Pojok Pengaduan</h3>
+                  <p>Sampaikan keluhan atau pengaduan Anda</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Map -->
+          <div class="custom-card" data-aos="fade-up">
+            <div class="card-body">
+              <h2 class="section-title">
+                <i data-feather="map-pin" class="section-icon"></i>
+                Lokasi Kami
+              </h2>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.000344608094!2d114.78347067399523!3d-3.810004943590661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6f0de28e23a5f%3A0x7b7198b365e60cb3!2sRumah%20Tahanan%20Negara%20Klas%20IIB%20Pelaihari!5e0!3m2!1sid!2sid!4v1740527739005!5m2!1sid!2sid"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="g-map"></iframe>
+              </div>
+              <div class="address-info">
+                <p><i data-feather="map" class="address-icon"></i> Jl. A. Yani No.9, Angsau, Kec. Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan 70814</p>
+                <p><i data-feather="phone" class="address-icon"></i> (0512) 21225</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </main>
 
-    <!-- Footer -->
-    <footer class="mt-4 text-center">
-      <p>&copy; 2025 Rutan Pelaihari. All rights reserved.</p>
-    </footer>
-  </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="https://kemenkumham.go.id/images/jux_portfolio_pro/logo-kemenkumham.png" alt="Logo Kemenkumham" class="footer-logo-img">
+            </div>
+            <p class="copyright">&copy; 2025 Rutan Pelaihari. Kementerian Hukum dan HAM Republik Indonesia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Inisialisasi Feather Icons -->
-  <script>
-    feather.replace();
-  </script>
-
-  <!-- Script untuk Kalkulator Expirasi -->
-  <script>
-    function hitungExpirasi() {
-      // Ambil nilai dari input form
-      const tanggalPenahanan = new Date(document.getElementById('tanggalPenahanan').value);
-      const vonisTahun = parseInt(document.getElementById('vonisTahun').value) || 0;
-      const vonisBulan = parseInt(document.getElementById('vonisBulan').value) || 0;
-      const vonisHari = parseInt(document.getElementById('vonisHari').value) || 0;
-      const remisiBulan = parseInt(document.getElementById('remisiBulan').value) || 0;
-      const remisiHari = parseInt(document.getElementById('remisiHari').value) || 0;
-  
-      // Hitung total vonis dalam hari
-      const totalVonisHari = (vonisTahun * 365) + (vonisBulan * 30) + vonisHari;
-  
-      // Hitung total remisi dalam hari
-      const totalRemisiHari = (remisiBulan * 30) + remisiHari;
-  
-      // Hitung sisa vonis setelah remisi
-      const sisaVonisHari = totalVonisHari - totalRemisiHari;
-  
-      // Hitung 1/3, 1/2, dan 2/3 vonis
-      const satuPerTigaVonisHari = Math.floor(totalVonisHari * (1 / 3));
-      const satuPerDuaVonisHari = Math.floor(totalVonisHari * (1 / 2));
-      const duaPerTigaVonisHari = Math.floor(totalVonisHari * (2 / 3));
-  
-      // Hitung tanggal 1/3, 1/2, dan 2/3 masa pidana
-      const tanggalSatuPerTiga = new Date(tanggalPenahanan);
-      tanggalSatuPerTiga.setDate(tanggalSatuPerTiga.getDate() + satuPerTigaVonisHari);
-  
-      const tanggalSatuPerDua = new Date(tanggalPenahanan);
-      tanggalSatuPerDua.setDate(tanggalSatuPerDua.getDate() + satuPerDuaVonisHari);
-  
-      const tanggalDuaPerTigaPidana = new Date(tanggalPenahanan);
-      tanggalDuaPerTigaPidana.setDate(tanggalDuaPerTigaPidana.getDate() + duaPerTigaVonisHari);
-  
-      // Hitung tanggal expirasi murni
-      const tanggalExpirasiMurni = new Date(tanggalPenahanan);
-      tanggalExpirasiMurni.setDate(tanggalExpirasiMurni.getDate() + sisaVonisHari);
-  
-      // Format hasil tanggal
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      const hasilFormattedSatuPerTiga = tanggalSatuPerTiga.toLocaleDateString('id-ID', options);
-      const hasilFormattedSatuPerDua = tanggalSatuPerDua.toLocaleDateString('id-ID', options);
-      const hasilFormattedDuaPerTigaPidana = tanggalDuaPerTigaPidana.toLocaleDateString('id-ID', options);
-      const hasilFormattedExpirasiMurni = tanggalExpirasiMurni.toLocaleDateString('id-ID', options);
-  
-      // Konversi 2/3 vonis ke tahun dan bulan
-      const duaPerTigaVonisTahun = Math.floor(duaPerTigaVonisHari / 365);
-      const duaPerTigaVonisSisaHari = duaPerTigaVonisHari % 365;
-      const duaPerTigaVonisBulan = Math.floor(duaPerTigaVonisSisaHari / 30);
-  
-      // Tampilkan hasil
-      document.getElementById('tanggalSatuPerTiga').textContent = hasilFormattedSatuPerTiga;
-      document.getElementById('tanggalSatuPerDua').textContent = hasilFormattedSatuPerDua;
-      document.getElementById('duaPerTigaVonis').textContent = `${duaPerTigaVonisTahun} Tahun, ${duaPerTigaVonisBulan} Bulan`;
-      document.getElementById('tanggalDuaPerTigaPidana').textContent = hasilFormattedDuaPerTigaPidana;
-      document.getElementById('tanggalExpirasiMurni').textContent = hasilFormattedExpirasiMurni;
-  
-      // Tampilkan elemen hasil
-      document.getElementById('hasilExpirasi').style.display = 'block';
-    }
-  </script>
-
-  <!-- Bootstrap JS via CDN -->
+  <!-- JavaScript Dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
